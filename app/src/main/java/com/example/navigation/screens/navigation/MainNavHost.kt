@@ -17,6 +17,7 @@ import com.example.navigation.Destination2
 import com.example.navigation.action.LocalMainNavigator
 import com.example.navigation.action.MainNavigationAction
 import com.example.navigation.screens.Destination1Screen
+import com.example.navigation.screens.Destination2Screen
 
 @Composable
 fun MainNavHost(
@@ -33,12 +34,7 @@ fun MainNavHost(
                 Destination1Screen()
             }
             composable<Destination2> {
-                Box(
-                    modifier = Modifier.fillMaxSize(),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text("Destination2")
-                }
+                Destination2Screen()
             }
 
         }

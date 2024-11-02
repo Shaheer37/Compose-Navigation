@@ -42,7 +42,7 @@ fun MainNavHost(
         navigator.navigate.collect {
             when(it){
                 MainNavigationAction.GoToDestination2 -> {
-                    navController.navigate(Destination2)
+                    navController.navigate(Destination2("param1"))
                 }
             }
         }

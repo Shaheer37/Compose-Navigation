@@ -6,4 +6,6 @@ import kotlinx.serialization.Serializable
 data object Destination1
 
 @Serializable
-data object Destination2
+data class Destination2(
+    val param1: String
+)
